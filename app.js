@@ -4,10 +4,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var Parse = require('parse/node');
 
 var routes = require('./routes/index');
 
 var app = express();
+
+
+Parse.initialize("wx8eMIWy1f9e60WrQJYUI81jlk5g6YYAPPmwxequ");
+Parse.serverURL = 'https://corpsboard.herokuapp.com/parse';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
