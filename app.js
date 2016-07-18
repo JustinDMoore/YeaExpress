@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
 
 
 app.get('/Volunteer', function(req, res) {
-  res.sendFile(path.join(__dirname + '/Volunteer/index.html'));
+  res.sendFile(path.join(__dirname + '/public/Volunteer/index.html'));
 });
 
 
